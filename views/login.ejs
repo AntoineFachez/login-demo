@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Log In</title>
+  </head>
+
+  <body class="flexbox">
+    <%- include('nav') %>
+    <h1>Please login</h1>
+    <form method="post" class="flexbox form">
+      <div class="flexbox log-in">
+        <div class="flexbox-vert">
+          <label for="message">email: </label>
+          <input type="email" name="email" id="email" value="user@email.com" />
+        </div>
+
+        <div class="flexbox-vert">
+          <label for="message">password: </label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            value="very-secret"
+          />
+        </div>
+      </div>
+      <div>
+        <button type="submit">Send</button>
+      </div>
+    </form>
+  </body>
+</html>
